@@ -1,11 +1,11 @@
 @echo off 
-cd "C:\Users\rusik\PetProject"
+cd "C:\Users\rusik\PetProject\to_run"
 
-rmdir /S /Q to_run.bin
+rmdir /S /Q bin
 del Jar.jar
 
-javac -d to_run.bin -encoding UTF-8 *.java
-jar cfe Jar.jar Main -C to_run.bin .
+javac -d bin -encoding UTF-8 *.java
+jar cfe Jar.jar ToRun -C bin .
 
 java -jar Jar.jar
 pause
